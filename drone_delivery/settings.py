@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'dev-secret-key-change-in-prod'
 DEBUG = os.getenv("DEBUG", "False") == "True"
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-drone-api.onrender.com', 'localhost', '127.0.0.1']
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
